@@ -28,29 +28,34 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
+
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Prima app
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Chi siamo</a>
-                <a class="dropdown-item" href="#">homepage</a>
-                <a class="dropdown-item" href="#">index</a>
-                <a class="dropdown-item" href="#">lista</a>
-                <a class="dropdown-item" href="#">variabili</a>
-                <a class="dropdown-item" href="#">welcome</a>
+                <a class="dropdown-item" href="{% url 'prima_app:homepage'%}">homepage</a>
+                <a class="dropdown-item" href="{% url 'prima_app:chi_siamo'%}">Chi siamo</a>
+                <a class="dropdown-item" href="{% url 'prima_app:lista'%}">lista</a>
+                <a class="dropdown-item" href="{% url 'prima_app:variabili'%}">variabili</a>
+                <a class="dropdown-item" href="{% url 'prima_app:welcome'%}">welcome</a>
             </div>
             </li>
+
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Seconda app
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">es_for</a>
-                    <a class="dropdown-item" href="#">es_if</a>
-                    <a class="dropdown-item" href="#">if_else_elif</a>
+                    <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">es_if</a>
+                    <a class="dropdown-item" href="{% url 'seconda_app:if_else_elif'%}">if_else_elif</a>
+                    <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">es_for</a>
                 </div>
               </li>
+
+
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
