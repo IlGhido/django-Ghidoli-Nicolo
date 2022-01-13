@@ -10,7 +10,7 @@ class Giornalista(models.Model):
 
     class Meta:
         verbose_name = "Giornalista"
-        verbose_name_plural = "Giornalista"
+        verbose_name_plural = "Giornalisti"
     
 class Articolo(models.Model):
     """ modello generico di un articolo """
@@ -23,6 +23,6 @@ class Articolo(models.Model):
     
     class Meta:
         verbose_name = "Articolo"
-        verbose_name_plural = "Articolo"
+        verbose_name_plural = "Articoli"
 
 # Create your models here.
